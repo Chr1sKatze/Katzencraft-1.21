@@ -1,5 +1,9 @@
 package net.chriskatze.katzencraft;
 
+import net.chriskatze.katzencraft.block.ModBlocks;
+import net.chriskatze.katzencraft.item.ModItemGroups;
+import net.chriskatze.katzencraft.item.ModItems;
+import net.chriskatze.katzencraft.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +15,9 @@ public class KatzencraftMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "item.katzencraft.fluorite": "Fluorite",
+  "item.katzencraft.raw_fluorite": "Raw Fluorite",
+
+  "block.katzencraft.fluorite_ore": "Fluorite Ore",
+  "block.katzencraft.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
+  "block.katzencraft.fluorite_block": "Fluorite Block",
+
+  "itemgroup.fluorite_item": "Fluorite Items",
+  "itemgroup.fluorite_block": "Fluorite Blocks"
+}
