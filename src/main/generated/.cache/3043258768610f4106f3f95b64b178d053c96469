@@ -1,0 +1,6 @@
+// 1.21	2024-10-10T04:02:50.9046091	katzencraft Mod/Block Loot Tables
+d6ccbee946a8c302e47f8bf902e6616ac190bbf9 data\katzencraft\loot_table\blocks\fluorite_block.json
+061ad27b3d548591ed86e75f37a39ce4df7dc205 data\katzencraft\loot_table\blocks\fluorite_nether_ore.json
+061ad27b3d548591ed86e75f37a39ce4df7dc205 data\katzencraft\loot_table\blocks\fluorite_ore.json
+061ad27b3d548591ed86e75f37a39ce4df7dc205 data\katzencraft\loot_table\blocks\fluorite_end_ore.json
+6219e6198ba894c27058ea8e4d83535711caece7 data\katzencraft\loot_table\blocks\fluorite_deepslate_ore.json
