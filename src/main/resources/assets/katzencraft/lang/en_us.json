@@ -2,8 +2,18 @@
   "item.katzencraft.fluorite": "Fluorite",
   "item.katzencraft.raw_fluorite": "Raw Fluorite",
 
+  "item.katzencraft.strawberry_seeds": "Strawberry Seeds",
+  "item.katzencraft.strawberry": "Strawberry",
+  "block.katzencraft.strawberry_crop": "Strawberry Crops",
+
+  "block.katzencraft.dahlia": "Dahlia",
+  "block.katzencraft.potted_dahlia": "Potted Dahlia",
+
+
   "block.katzencraft.fluorite_ore": "Fluorite Ore",
   "block.katzencraft.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
+  "block.katzencraft.fluorite_nether_ore": "Fluorite Nether Ore",
+  "block.katzencraft.fluorite_end_ore": "Fluorite End Ore",
   "block.katzencraft.fluorite_block": "Fluorite Block",
 
   "itemgroup.fluorite_item": "Fluorite Items",

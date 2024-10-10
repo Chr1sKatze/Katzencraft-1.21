@@ -1,7 +1,6 @@
 package net.chriskatze.katzencraft.world.gen;
 
 import net.chriskatze.katzencraft.world.ModPlacedFeatures;
-import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;
