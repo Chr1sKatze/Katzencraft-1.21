@@ -17,7 +17,6 @@ public class StrawberryCropBlock extends CropBlock {
     public StrawberryCropBlock(Settings settings) {
         super(settings);
     }
-
     @Override
     protected ItemConvertible getSeedsItem() {
         return ModItems.STRAWBERRY_SEEDS;

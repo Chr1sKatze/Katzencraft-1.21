@@ -1,7 +1,9 @@
 package net.chriskatze.katzencraft.block;
 
 import net.chriskatze.katzencraft.KatzencraftMod;
+import net.chriskatze.katzencraft.block.custom.GerstenTopCropBlock;
 import net.chriskatze.katzencraft.block.custom.StrawberryCropBlock;
+import net.chriskatze.katzencraft.block.custom.GerstenBottomCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
@@ -34,6 +36,24 @@ public class ModBlocks {
     // list of crop blocks
     public static final Block STRAWBERRY_CROP = registerBlockWithoutBlockItem("strawberry_crop",
             new StrawberryCropBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block GERSTEN_BOTTOM_CROP = registerBlockWithoutBlockItem("gersten_bottom_crop",
+            new GerstenBottomCropBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block GERSTEN_TOP_CROP = registerBlockWithoutBlockItem("gersten_top_crop",
+            new GerstenTopCropBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.DARK_GREEN)
                     .noCollision()
                     .ticksRandomly()

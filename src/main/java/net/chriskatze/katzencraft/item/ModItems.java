@@ -4,7 +4,6 @@ import net.chriskatze.katzencraft.KatzencraftMod;
 import net.chriskatze.katzencraft.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.CropBlock;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -22,6 +21,8 @@ public class ModItems {
     public static final Item RAW_FLUORITE = registerItem("raw_fluorite", new Item(new Item.Settings()));
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds", new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
+    public static final Item GERSTEN_SEEDS = registerItem("gersten_seeds", new AliasedBlockItem(ModBlocks.GERSTEN_BOTTOM_CROP, new Item.Settings()));
+    public static final Item GERSTEN_TOP_SEEDS = registerItem("gersten_top_seeds", new AliasedBlockItem(ModBlocks.GERSTEN_TOP_CROP, new Item.Settings()));
 
     // puts items in the vanilla "ingredients" creative inventory itemgroup
     private static void customIngredients(FabricItemGroupEntries entries) {
@@ -33,6 +34,7 @@ public class ModItems {
     private static void customFood_And_Drink(FabricItemGroupEntries entries) {
         entries.add(STRAWBERRY);
         entries.add(STRAWBERRY_SEEDS);
+        entries.add(GERSTEN_SEEDS);
     }
 
     // puts items in the vanilla "Natural" creative inventory itemgroup

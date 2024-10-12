@@ -1,6 +1,8 @@
 package net.chriskatze.katzencraft.datagen;
 
 import net.chriskatze.katzencraft.block.ModBlocks;
+import net.chriskatze.katzencraft.block.custom.GerstenBottomCropBlock;
+import net.chriskatze.katzencraft.block.custom.GerstenTopCropBlock;
 import net.chriskatze.katzencraft.block.custom.StrawberryCropBlock;
 import net.chriskatze.katzencraft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -45,6 +47,11 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(StrawberryCropBlock.AGE, 5));
         this.addDrop(ModBlocks.STRAWBERRY_CROP, this.cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
+
+        BlockStatePropertyLootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(ModBlocks.GERSTEN_TOP_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(GerstenTopCropBlock.AGE, 2));
+        this.addDrop(ModBlocks.GERSTEN_TOP_CROP, this.cropDrops(ModBlocks.GERSTEN_TOP_CROP, ModItems.STRAWBERRY, ModItems.GERSTEN_SEEDS, builder3));
+        addDrop(ModBlocks.GERSTEN_BOTTOM_CROP, ModItems.GERSTEN_SEEDS);
     }
 
     // function for multuple ore drops

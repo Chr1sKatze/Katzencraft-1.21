@@ -6,6 +6,11 @@
   "item.katzencraft.strawberry": "Strawberry",
   "block.katzencraft.strawberry_crop": "Strawberry Crops",
 
+  "block.katzencraft.gersten_bottom_crop": "Gersten Crops",
+  "block.katzencraft.gersten_seeds": "Gersten Seeds",
+  "block.katzencraft.gersten_top_crop": "Gersten Crops",
+  "block.katzencraft.gersten_top_seeds": "Gersten Top Seeds",
+
   "block.katzencraft.dahlia": "Dahlia",
   "block.katzencraft.potted_dahlia": "Potted Dahlia",
 

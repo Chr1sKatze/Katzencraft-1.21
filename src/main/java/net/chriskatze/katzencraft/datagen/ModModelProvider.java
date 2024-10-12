@@ -1,6 +1,8 @@
 package net.chriskatze.katzencraft.datagen;
 
 import net.chriskatze.katzencraft.block.ModBlocks;
+import net.chriskatze.katzencraft.block.custom.GerstenBottomCropBlock;
+import net.chriskatze.katzencraft.block.custom.GerstenTopCropBlock;
 import net.chriskatze.katzencraft.block.custom.StrawberryCropBlock;
 import net.chriskatze.katzencraft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -24,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FLUORITE_END_ORE);
         // crop block model provider
         blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, StrawberryCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.GERSTEN_BOTTOM_CROP, GerstenBottomCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.GERSTEN_TOP_CROP, GerstenTopCropBlock.AGE, 0, 1, 2);
         // potted plant model provider
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DAHLIA, ModBlocks.POTTED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
