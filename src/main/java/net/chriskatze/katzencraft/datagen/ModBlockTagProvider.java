@@ -15,6 +15,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
+        // MAKES BLOCKS MINEABLE ---------------------------------------------------------------------------------------
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.FLUORITE_BLOCK,
                         ModBlocks.FLUORITE_ORE,
@@ -22,6 +24,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.FLUORITE_NETHER_ORE,
                         ModBlocks.FLUORITE_END_ORE);
 
+        // MINEABLE BLOCKS NEED IRON TOOL ------------------------------------------------------------------------------
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.FLUORITE_ORE,
                         ModBlocks.FLUORITE_DEEPSLATE_ORE,

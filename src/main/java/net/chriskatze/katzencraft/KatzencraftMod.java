@@ -16,12 +16,14 @@ public class KatzencraftMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		// THIS CODE RUNS AS SOON AS MINECRAFT IS IN A MOD-LOAD-READY STATE --------------------------------------------
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGeneration();
 
-		// able to add items to the composter
+		// USED TO ADD ITEMS TO THE COMPOSTER --------------------------------------------------------------------------
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STRAWBERRY, 0.3f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.STRAWBERRY_SEEDS, 0.2f);
 	}

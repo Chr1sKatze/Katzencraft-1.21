@@ -1,4 +1,4 @@
-package net.chriskatze.katzencraft.block.custom;
+package net.chriskatze.katzencraft.block.cropblock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

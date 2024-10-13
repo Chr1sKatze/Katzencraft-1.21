@@ -1,4 +1,4 @@
-package net.chriskatze.katzencraft.block.custom;
+package net.chriskatze.katzencraft.block.cropblock;
 
 import net.chriskatze.katzencraft.block.ModBlocks;
 import net.chriskatze.katzencraft.item.ModItems;

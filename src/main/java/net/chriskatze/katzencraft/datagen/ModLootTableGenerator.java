@@ -1,9 +1,8 @@
 package net.chriskatze.katzencraft.datagen;
 
 import net.chriskatze.katzencraft.block.ModBlocks;
-import net.chriskatze.katzencraft.block.custom.GerstenBottomCropBlock;
-import net.chriskatze.katzencraft.block.custom.GerstenTopCropBlock;
-import net.chriskatze.katzencraft.block.custom.StrawberryCropBlock;
+import net.chriskatze.katzencraft.block.cropblock.CustomAge5CropBlock;
+import net.chriskatze.katzencraft.block.cropblock.GerstenTopCropBlock;
 import net.chriskatze.katzencraft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -45,7 +44,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         // crop block drops
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
-                .properties(StatePredicate.Builder.create().exactMatch(StrawberryCropBlock.AGE, 5));
+                .properties(StatePredicate.Builder.create().exactMatch(CustomAge5CropBlock.AGE, 5));
         this.addDrop(ModBlocks.STRAWBERRY_CROP, this.cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
 
         BlockStatePropertyLootCondition.Builder builder3 = BlockStatePropertyLootCondition.builder(ModBlocks.GERSTEN_TOP_CROP)
