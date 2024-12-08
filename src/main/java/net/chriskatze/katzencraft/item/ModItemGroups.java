@@ -48,6 +48,16 @@ public class ModItemGroups {
 
     private static void customNatural(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.DAHLIA);
+        entries.add(ModItems.BULBASAUR_SPAWN_EGG);
+        entries.add(ModItems.IVYSAUR_SPAWN_EGG);
+    }
+
+    private static void customTools(FabricItemGroupEntries entries) {
+
+    }
+
+    private static void customCombat(FabricItemGroupEntries entries) {
+
     }
 
     // |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -60,5 +70,7 @@ public class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItemGroups::customIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItemGroups::customFood_And_Drink);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItemGroups::customNatural);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItemGroups::customTools);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItemGroups::customCombat);
     }
 }

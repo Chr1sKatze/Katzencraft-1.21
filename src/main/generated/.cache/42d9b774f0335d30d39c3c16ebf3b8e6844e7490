@@ -1,10 +1,12 @@
-// 1.21	2024-10-13T09:33:21.4859802	katzencraft Mod/Model Definitions
+// 1.21	2024-12-06T06:21:40.0252026	katzencraft Mod/Model Definitions
 65db0541e9311ef08bd2a0a8066e778670ecd547 assets\katzencraft\blockstates\gersten_top_crop.json
 9c66007392ce5d8eca89369bd06f839282144568 assets\katzencraft\models\block\fluorite_nether_ore.json
 705b21934fcc4105ac257499de1913a4e5682956 assets\katzencraft\models\item\dahlia.json
 0d8ac3dd53056f6b54b26aaff696b63aef961eff assets\katzencraft\models\block\fluorite_end_ore.json
 88d60753d96c5b5c6f1d1bab3410e99aea3088ce assets\katzencraft\models\block\strawberry_crop_stage1.json
 2de960e65ab7a771e4a85ee5c935b737729cb20e assets\katzencraft\models\block\gersten_top_crop_stage0.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\katzencraft\models\item\bulbasaur_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\katzencraft\models\item\ivysaur_spawn_egg.json
 64fab92278d91bbcc3a5e98632cd09110adb717d assets\katzencraft\models\item\fluorite_nether_ore.json
 0fece33439a5ec0c62d8f9bff7e01b305c29f36f assets\katzencraft\models\item\fluorite_block.json
 341086667f910188a58237d1410ce3e715d96ed2 assets\katzencraft\blockstates\strawberry_crop.json

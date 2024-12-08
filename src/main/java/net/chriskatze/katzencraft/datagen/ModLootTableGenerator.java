@@ -7,6 +7,7 @@ import net.chriskatze.katzencraft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.data.server.loottable.EntityLootTableGenerator;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -29,20 +30,22 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        // normal self drops
+
+        // STANDARD SELF DROPS -----------------------------------------------------------------------------------------
         addDrop(ModBlocks.FLUORITE_BLOCK);
         addDrop(ModBlocks.DAHLIA);
 
-        // flower pot drops
+        // POTTED PLANT DROPS ------------------------------------------------------------------------------------------
         addDrop(ModBlocks.POTTED_DAHLIA, pottedPlantDrops(ModBlocks.DAHLIA));
 
-        // ore drops
+        // ORE DROPS ---------------------------------------------------------------------------------------------------
         addDrop(ModBlocks.FLUORITE_ORE, oreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE));
-        addDrop(ModBlocks.FLUORITE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE, 2, 5));
+        addDrop(ModBlocks.FLUORITE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE,
+                2, 5));
         addDrop(ModBlocks.FLUORITE_NETHER_ORE, oreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE));
         addDrop(ModBlocks.FLUORITE_END_ORE, oreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE));
 
-        // crop block drops
+        // CROP DROPS --------------------------------------------------------------------------------------------------
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CustomAge5CropBlock.AGE, 5));
         this.addDrop(ModBlocks.STRAWBERRY_CROP, this.cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
@@ -51,9 +54,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(GerstenTopCropBlock.AGE, 2));
         this.addDrop(ModBlocks.GERSTEN_TOP_CROP, this.cropDrops(ModBlocks.GERSTEN_TOP_CROP, ModItems.STRAWBERRY, ModItems.GERSTEN_SEEDS, builder3));
         addDrop(ModBlocks.GERSTEN_BOTTOM_CROP, ModItems.GERSTEN_SEEDS);
+        // MOB DROPS ---------------------------------------------------------------------------------------------------
     }
 
-    // function for multuple ore drops
+    // function for multiple ore drops
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ItemEntry.builder(item)
